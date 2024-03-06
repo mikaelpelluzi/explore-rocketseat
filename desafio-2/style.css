@@ -8,10 +8,20 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
+  color: #d2d2d2;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 .page {
-  width: 1080px;
+  width: 1100px;
   min-height: 100vh;
   margin: 0 auto;
 }
@@ -20,7 +30,7 @@ nav.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 70px 0 100px;
+  margin-top: 70px;
 }
 
 .menu {
@@ -31,11 +41,54 @@ nav.header {
   gap: 64px;
 }
 
-.menu li a {
-  text-decoration: none;
-  color: #fff;
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+main section {
+  width: 650px;
+  margin: 100px 0 160px;
+  text-align: center;
   font-family: "JetBrains Mono", sans-serif;
+}
+
+main section h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+main section span {
+  color: #00bfa6;
+}
+
+main section p strong {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 28px;
+
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+footer #line {
+  width: 570px;
+  height: 0;
+  border: 1px solid #00bfa6;
+
+  margin: 0 auto 30px;
+}
+
+#cadeado {
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
 }
