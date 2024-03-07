@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  background: #0032ff5d;
+  color: #fff;
+}
+
+p,
+label,
+span,
+input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 440px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #25377c;
+}
+
+.page {
+  width: 760px;
+  margin: auto;
+}
+
+header {
+  width: 420px;
+  margin: 140px 0 60px;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 18px;
+}
+
+header p {
+  font-size: 20;
+}
+
+form {
+  background: #ffffff;
+  min-height: 300px;
+  padding: 64px;
+
+  border-radius: 8px 8px 0 0;
+  color: #000;
+}
+
+form fieldset {
+  margin-bottom: 14px;
+  border: none;
+}
+
+form legend {
+  font-size: 24px;
+  line-height: 34px;
+  color: #535971;
+}
+
+form .separetor {
+  border: 1px solid #e6e6f0;
+  margin: 16px 0 36px;
+}
+
+#col-name {
+  display: flex;
+  gap: 20px;
+}
+
+#col-name .input-wrapper {
+  width: 100%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+}
+
+.input-wrapper label span {
+  font-size: 12px;
+  line-height: 24px;
+  color: #c1bccc;
+}
+
+.input-wrapper input {
+  background: #f5f5f5;
+  margin: 9px 0 16px;
+  height: 56px;
+  padding: 0 12px;
+
+  border-radius: 8px;
+  border: 1px solid #d4d4d4;
+
+  font-size: 16px;
+  line-height: 32px;
+  color: #a1a1a1;
+}
+
+.col-3 {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 100%;
+}
+
+.input-wrapper h2 {
+  font-size: 20px;
+  line-height: 34px;
+  color: #535971;
+  font-weight: 400;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 54px 72px;
+  height: 160px;
+  margin-bottom: 180px;
+  background: #535971;
+  border-radius: 0 0 8px 8px;
+}
+
+footer .button {
+  background: #ff5374;
+
+  height: 56px;
+
+  border-radius: 8px;
+  border: none;
+
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+}
+footer .button:hover {
+  background: #ff3960;
+  cursor: pointer;
+}
+
+input:user-invalid {
+  border: 1px solid #ff1010;
+}
